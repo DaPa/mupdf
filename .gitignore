@@ -4,9 +4,9 @@ thirdparty/jpegxr
 
 # Generated files:
 build
-generated
-include/mupdf/pdf/name-table.h
-source/pdf/pdf-name-table.h
+#generated
+#include/mupdf/pdf/name-table.h
+#source/pdf/pdf-name-table.h
 tags
 cscope.*
 
