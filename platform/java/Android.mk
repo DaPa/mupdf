@@ -90,8 +90,8 @@ LOCAL_C_INCLUDES := \
 LOCAL_CFLAGS := \
 	-ffunction-sections -fdata-sections \
 	-DFT2_BUILD_LIBRARY -DDARWIN_NO_CARBON \
-	'-DFT_CONFIG_MODULES_H="slimftmodules.h"' \
-	'-DFT_CONFIG_OPTIONS_H="slimftoptions.h"' \
+	-DFT_CONFIG_MODULES_H=\"slimftmodules.h\" \
+	-DFT_CONFIG_OPTIONS_H=\"slimftoptions.h\" \
 	-DHAVE_STDINT_H \
 	-DOPJ_STATIC -DOPJ_HAVE_INTTYPES_H -DOPJ_HAVE_STDINT_H -DUSE_JPIP \
 

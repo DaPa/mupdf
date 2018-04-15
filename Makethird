@@ -78,8 +78,8 @@ $(FREETYPE_OUT):
 	$(MKDIR_CMD)
 
 FT_CFLAGS := -DFT2_BUILD_LIBRARY -DDARWIN_NO_CARBON \
-	'-DFT_CONFIG_MODULES_H="slimftmodules.h"' \
-	'-DFT_CONFIG_OPTIONS_H="slimftoptions.h"'
+	-DFT_CONFIG_MODULES_H=\"slimftmodules.h\" \
+	-DFT_CONFIG_OPTIONS_H=\"slimftoptions.h\"
 
 $(FREETYPE_OUT)/%.o: $(FREETYPE_DIR)/src/base/%.c	| $(FREETYPE_OUT)
 	$(CC_CMD) $(FT_CFLAGS)
